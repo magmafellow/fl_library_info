@@ -30,7 +30,7 @@ body {
 
 .header {
   position: fixed;
-  z-index: 5;
+  z-index: 20;
   background-color: #fff;
   top: 0;
   left: 0;
@@ -93,6 +93,8 @@ body {
 
 /* burger */
 .burger {
+  position: relative;
+  z-index: 100;
   display: flex;
   flex-flow: column nowrap;
   justify-content: start;
@@ -387,6 +389,102 @@ body {
 }
 /* end footer bottom */
 
+/* mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  display: none; /* it changes to flex with js */
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+.mobile-menu.active {
+  display: flex;
+}
+.mobile-menu__link {
+  display: inline-block;
+  padding: 16px 0;
+  width: 100%;
+  text-align: center;
+  color: #8B9DE6;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  border-bottom: 1px solid #6b7dc4;
+}
+.mobile-menu__link:hover {
+  color: #7889cf;
+  background-color: #d9e0ff;
+}
+
+/* end mobile menu */
+
+.goLeftSmallAndBack {
+  animation-name: goLeftSmallAndBack;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes goLeftSmallAndBack {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-6px);
+  }
+  100% {
+    transform :translateX(0)
+  }
+}
+
+.goLeftMediumAndBack {
+  animation-name: goLeftSmallAndBack;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+}
+
+@keyframes goLeftMediumAndBack {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform :translateX(0)
+  }
+}
+
+.goLeftManyAndBack {
+  animation-name: goLeftSmallAndBack;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes goLeftManyAndBack {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-14px);
+  }
+  100% {
+    transform :translateX(0)
+  }
+}
+
+/* animations */
+
+
+
+/* end animations */
+
 
 @media (max-width: 958px) {
   .burger {
@@ -401,6 +499,9 @@ body {
   .header__logo {
     flex: 1 1 auto;
   }
+  .main {
+    margin-bottom: 200px;
+  }
 }
 @media (max-width: 958px) {
   .search__phantom {
@@ -414,6 +515,9 @@ body {
   }
   .search__searchbtn {
     padding: 12px 54px;
+  }
+  .footer__container_top {
+    padding-bottom: 80px;
   }
 }
 
@@ -431,9 +535,14 @@ body {
   .search__searchbtn {
     padding: 12px 44px;
   }
-
+  .footer__container_top {
+    padding-bottom: 65px;
+  }
   .shape1 {
     display: none;
+  }
+  .main {
+    margin-bottom: 150px;
   }
 }
 
@@ -451,7 +560,9 @@ body {
   .search__searchbtn {
     padding: 12px 34px;
   }
-
+  .footer__container_top {
+    padding-bottom: 45px;
+  }
   .top {
     flex-flow: column nowrap;
     gap: 30px;
@@ -478,6 +589,9 @@ body {
   .top__two, .top__three {
     display: none;
   }
+  .main {
+    margin-bottom: 120px;
+  }
 }
 @media (max-width: 600px) {
   .search__phantom {
@@ -496,8 +610,20 @@ body {
   .search__searchbtn {
     padding: 12px 24px;
   }
-
-
+  .found__title {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .main {
+    margin-bottom: 100px;
+  }
+  .footer__container_top {
+    padding-bottom: 38px;
+  }
+  .footer__container_bottom {
+    flex-flow: column nowrap;
+    gap: 36px;
+  }
 }
 @media (max-width: 500px) {
   .search__phantom {
