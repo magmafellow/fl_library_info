@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Layout Library Info</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__logo logo">
+            <div class="logo__item1">
+              <img src="./img/logo.png" alt="logotype picture" />
+            </div>
+            <div class="logo__item2">
+              <span class="logo__row">Региональный</span>
+              <span class="logo__row">библиотечно-информационный</span>
+              <span class="logo__row">комплекс</span>
+            </div>
+          </div>
+          <div class="burger">
+            <div class="burger__one"></div>
+            <div class="burger__two"></div>
+            <div class="burger__three"></div>
+          </div>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Афиша</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Новости</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Проекты</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Электронный каталог</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link_selected">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Об организации</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="main__container container">
+          <div class="main__crumbs crumbs">
+            <div class="crumbs__root">Главная</div>
+            <div class="curmbs__sep">
+              <img src="./img/a-right.svg" alt="arrow right" />
+            </div>
+            <div class="crumbs__last">Услуги организации</div>
+          </div>
+          <div class="main__search search">
+            <div class="search__phantom">
+              Поиск
+              <div class="search__phantom-tail">Поиск по сайту</div>
+            </div>
+            <div class="search__innerbox">
+              <div class="search__inpbox">
+                <input
+                  placeholder="Введите текст для поиска здесь..."
+                  type="text"
+                  class="search__input"
+                />
+                <button type="button" class="search__searchbtn">
+                  Начать поиск
+                </button>
+              </div>
+
+              <div class="search__citate">
+                <p>Достоин тот иметь, кто имеет мужество искать</p>
+              </div>
+
+              <div class="search__found found">
+                <h2 class="found__title">Найдено: 123 элемента</h2>
+                <div class="found__box">
+                  <div class="found__crumbs">
+                    <div class="found__crumbs1">Главная</div>
+                    <div class="found__crumbs2">/</div>
+                    <div class="found__crumbs3">Новости</div>
+                  </div>
+                  <div class="found__result">
+                    Use the DFSDF= xxx parameter in procedures to specify the
+                    3-character suffix of the DFSDFxxx PROCLIB member that you
+                    want to use for this procedure.
+                  </div>
+                </div>
+                <div class="found__box">
+                  <div class="found__crumbs">
+                    <div class="found__crumbs1">Главная</div>
+                    <div class="found__crumbs2">/</div>
+                    <div class="found__crumbs3">События</div>
+                  </div>
+                  <div class="found__result">
+                    Use the DFSDF= xxx parameter in procedures to specify the
+                    3-character suffix of the DFSDFxxx PROCLIB member that you
+                    want to use for this procedure.
+                  </div>
+                </div>
+                <div class="found__box">
+                  <div class="found__crumbs">
+                    <div class="found__crumbs1">Главная</div>
+                    <div class="found__crumbs2">/</div>
+                    <div class="found__crumbs3">Презентация книги</div>
+                  </div>
+                  <div class="found__result">
+                    Use the DFSDF= xxx parameter in procedures to specify the
+                    3-character suffix of the DFSDFxxx PROCLIB member that you
+                    want to use for this procedure.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination">
+              <div class="pagination__box">
+                <a href="#" class="pagination__link pagination__link_selected"
+                  >1</a
+                >
+                <a href="#" class="pagination__link">2</a>
+                <a href="#" class="pagination__link">3</a>
+                <a href="#" class="pagination__link">4</a>
+                <a href="#" class="pagination__link">5</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container footer__container_top container">
+          <div class="footer__top top">
+            <div class="top__one">
+              <div class="top__one-imgbox">
+                <img src="./img/logo.svg" alt="logotype picture" />
+              </div>
+              <div class="top__one-text-col">
+                <div class="top__one-text-col-top">
+                  ГУК ТО «Региональный<br />библиотечно-информационный<br />
+                  комплекс»
+                </div>
+                <div class="top__one-text-col-bottom">
+                  Ценность книги, доступность информации,<br />равные возможности
+                </div>
+              </div>
+            </div>
+            <div class="top__two">
+              <a class="top__two-link" href="#">Афиша</a>
+              <a class="top__two-link" href="#">Новости</a>
+              <a class="top__two-link" href="#">Проекты</a>
+              <a class="top__two-link" href="#">Электронный каталог</a>
+            </div>
+            <div class="top__three">
+              <a class="top__two-link" href="#">Услуги</a>
+              <a class="top__two-link" href="#">Об организации</a>
+              <a class="top__two-link" href="#">Контакты</a>
+            </div>
+            <div class="top__four">
+              <div class="top__four-imgbox">
+                <img src="./img/vk.png" alt="vk icon">
+              </div>
+              <div class="top__four-imgbox">
+                <img src="./img/fb.png" alt="facebook icon">
+              </div>
+              <div class="top__four-imgbox">
+                <img src="./img/inst.png" alt="instagram icon">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__container footer__container_bottom footer container">
+            <div class="footer__bottom-left">
+              © 2019 ГУК ТО "РБИК"
+            </div>
+            <div class="footer__bottom-right">
+              <img src="./img/stats.png" alt="stats">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="shape1">
+          <img src="./img/shape1.png" alt="decor 1">
+        </div>
+      </footer>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
